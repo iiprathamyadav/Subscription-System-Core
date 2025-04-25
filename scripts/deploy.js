@@ -5,7 +5,7 @@ async function main() {
 
   console.log("Deploying Subscription contract with deployer:", deployer.address);
 
-  const Token = await hre.ethers.getContractFactory("YourERC20Token");
+  const Token = await hre.ethers.getContractFactory("0xF7C115d0FC3E0d0509eE459DE04405786Cc12b42");
   const token = await Token.deploy();
   await token.deployed();
 
